@@ -1,6 +1,7 @@
 package com.kvang.taglibdemo;
 
 import javax.servlet.jsp.JspException;
+import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.tagext.SimpleTagSupport;
 import java.io.IOException;
 
@@ -13,6 +14,8 @@ public class AdminSignature extends SimpleTagSupport {
     public void doTag() throws JspException, IOException {
         super.doTag();
 
-        // Add new custom tag for Administrator Signature
+        // Add new custom tag for Administrator Signature for ???
+        JspWriter out = getJspContext().getOut();
+        out.println("Frances Lo");
     }
 }
